@@ -1,5 +1,6 @@
-import React from 'react';
-import { FaReact } from 'react-icons/fa';
+import React, {useState} from 'react';
+import {FaBars, FaReact} from 'react-icons/fa';
+import {HiX} from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 
 const data = [
@@ -19,9 +20,16 @@ const data = [
         label: 'SKILLS',
         to: '/skills'
     }
-]
+];
 
-const NavBar = () => {
+const Navbar = () => {
+
+    const [toggleIcon, setToggleIcon] = useState(false);
+
+    const handleToggle = () => {
+        setToggleIcon(!toggleIcon);
+    };
+
     return (
         <div>
             <nav className="navBar">
@@ -41,8 +49,13 @@ const NavBar = () => {
                         ))
                     }
                 </ul>
+                <div className='navIcon' onClick={handleToggle}>
+                    {
+                        toggleIcon ? <HiX size={30} /> : <FaBars size={30} />
+                    }
+                </div>
             </nav>
         </div>
     );
 };
-export default NavBar;
+export default Navbar;
