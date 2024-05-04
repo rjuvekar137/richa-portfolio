@@ -11,7 +11,9 @@ const Home=()=>{
                      <br/>
                      <TypeAnimation
                         sequence={[
-                            'A Programmer',
+                            'A Developer',
+                            1000,
+                            'A Creative Thinker',
                             1000,
                             'A Musician',
                             1000,
