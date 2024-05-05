@@ -12,32 +12,38 @@ const projectData = [
     {
         id: 2,
         name: "Ola's Nightmare",
-        image: ImageOne
+        image: ImageOne,
+        link : ""
     },
     {
         id: 2,
         name: "Predictive Analysis of Salary Classifications",
-        image: ImageOne
+        image: ImageOne,
+        link : ""
     },
     {
         id: 2,
         name: "ReScan",
-        image: ImageOne
+        image: ImageOne,
+        link : ""
     },
     {
         id: 3,
         name: "Donuts",
-        image: ImageOne
+        image: ImageOne,
+        link : ""
     },
     {
         id: 4,
         name: "Bruno Is Orange (Cover)",
-        image: ImageOne
+        image: ImageOne,
+        link : ""
     },
     {
         id: 4,
         name: "Over The Moon (Cover)",
-        image: ImageOne
+        image: ImageOne,
+        link : ""
     }
 ]
 
@@ -63,10 +69,15 @@ const filterData = [
 const Projects = () => {
 
     const [filteredValue,setFilteredValue] = useState(1);
+    const [hovereredValue,setHoveredValue] = useState(null);
 
     function handleFilter(currentId){
         setFilteredValue(currentId)
     };
+
+    function handleHover(index){
+        setHoveredValue(index);
+    }
 
     const filteredItems = filteredValue === 1 ? projectData : projectData.filter(item=>item.id === filteredValue)
 
@@ -80,7 +91,7 @@ const Projects = () => {
                 <ul className="portfolio__content__filter">
                     {
                         filterData.map((item) => (
-                            <li onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
+                            <li className={item.filterId === filteredValue ? "active" : ""} onClick={()=>handleFilter(item.filterId)} key={item.filterId}>
                                 {
                                     item.label
                                 }
@@ -90,12 +101,27 @@ const Projects = () => {
                 </ul>
                 <div className="portfolio__content__cards">
                     {
-                        filteredItems.map((item)=>(
-                            <div className="portfolio__content__cards__item" key={`cardItem${item.name.trim()}`}>
+                        filteredItems.map((item,index)=>(
+                            <div 
+                            className="portfolio__content__cards__item" 
+                            key={`cardItem${item.name.trim()}`}
+                            onMouseEnter={()=>handleHover(index)}
+                            onMouseLeave={()=>handleHover(null)}
+                            >
                                 <div className="portfolio__content__cards__item__img-wrapper">
                                     <a>
                                         <img alt="dummy data" src={item.image}/>
                                     </a>
+                                </div>
+                                <div className="overlay">
+                                    {
+                                        index === hovereredValue && (
+                                            <div>
+                                                <p>{item.name}</p>
+                                                <button>View More</button>
+                                            </div>
+                                        )
+                                    }
                                 </div>
                             </div>
                         ))
