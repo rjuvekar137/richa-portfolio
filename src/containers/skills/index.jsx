@@ -50,6 +50,7 @@ const Skills = () => {
                                                         strokeColor="var(--theme-main-color)"
                                                         trailWidth={"4"}
                                                         strokeLinecap="round"
+                                                        
                                                     />
                                                 </div>
 
