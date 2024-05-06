@@ -21,10 +21,6 @@ const personalDetails = [
         value: "juvekar.r@northeastern.edu",
     },
     {
-        label: "Phone Number:",
-        value: "978-799-7641"
-    },
-    {
         label: "Graduation Date:",
         value: "May 2026",
     },

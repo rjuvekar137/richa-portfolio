@@ -4,19 +4,19 @@ export const skillsData = [
         data: [
             {
                 skillName: "HTML",
-                percentage: "50",
-            },
-            {
-                skillName: "CSS",
-                percentage: "50",
-            },
-            {
-                skillName: "TYPESCRIPT",
                 percentage: "70",
             },
             {
+                skillName: "CSS",
+                percentage: "70",
+            },
+            {
+                skillName: "TYPESCRIPT",
+                percentage: "80",
+            },
+            {
                 skillName: "JAVASCRIPT",
-                percentage: "50",
+                percentage: "60",
             }
         ]
     },
@@ -29,7 +29,7 @@ export const skillsData = [
             },
             {
                 skillName: "PYTHON",
-                percentage: "70",
+                percentage: "80",
             },
             {
                 skillName: "C++",
@@ -54,7 +54,7 @@ export const skillsData = [
             },
             {
                 skillName: "MONGODB",
-                percentage: "30",
+                percentage: "40",
             },
             {
                 skillName: "REDIS",
