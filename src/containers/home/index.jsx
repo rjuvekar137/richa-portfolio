@@ -2,14 +2,15 @@ import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import "./style.scss"
 
-const Home=()=>{
-    return(
+const Home = () => {
+    return (
         <section id="home" className="home">
             <div className="home__text-wrapper">
                 <h1>
-                     Hi, I'm Richa Juvekar
-                     <br/>
-                     <TypeAnimation
+                    Hi, I'm Richa Juvekar
+                    <br />
+                    <TypeAnimation
+                        className="type-animation"
                         sequence={[
                             'A Developer',
                             1000,
@@ -19,14 +20,15 @@ const Home=()=>{
                             1000,
                             'An Artist',
                             1000,
-                            'A Student',
+                            'A Life-Long Learner',
                             1000
                         ]}
                         wrapper="span"
                         speed={30}
-                        style={{ fontSize: '8rem', display: 'inline-block' }}
+                        style={{ fontSize: 'inherit' }} 
                         repeat={Infinity}
                     />
+
                 </h1>
             </div>
         </section>

@@ -20,37 +20,37 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-            //animation: typingEffect 2.5s steps(30,end);
+
+            .type-animation {
+                font-size: inherit;
+                line-height: inherit;
+                display: inline-block;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 550px) {
-
     .home__text-wrapper h1 {
         font-size: 3rem;
         line-height: 5rem;
     }
-
 }
 
 @media only screen and (min-width: 551px) and (max-width: 768px) {
-
     .home__text-wrapper h1 {
         font-size: 4rem;
         line-height: 6rem;
     }
-
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-
     .home__text-wrapper h1 {
         font-size: 6rem;
         line-height: 8rem;
     }
-
 }
+
 
 @keyframes typingEffect{
     from {
