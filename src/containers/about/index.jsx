@@ -56,14 +56,20 @@ const About = () => {
                     >
                         <h3>Richa Juvekar</h3>
                         <p>
-                            Hello, I'm Richa! I'm a sophomore student at Northeastern University, majoring in Computer Science and
-                            Marketing Analytics and pursuing two minors in Music Industry and Immersive Media.
-                            I am dedicated to leveraging my skills in computer science to make meaningful contributions to a
-                            variety of fields, especially within the artistic industries. My academic journey reflects my commitment
-                            to bridging the gap between technology and the arts, creating a unique blend of skills that I believe will
-                            drive innovation and creativity in the digital landscape.
+                            <div>
+                                Hello, I'm Richa! I'm a sophomore student at Northeastern University, majoring in Computer Science and
+                                Marketing Analytics and pursuing two minors in Music Industry and Immersive Media.
+                            </div>
+                            <div>
+                                I am dedicated to leveraging my skills in computer science to make meaningful contributions to a
+                                variety of fields, especially within the artistic industries. My academic journey reflects my commitment
+                                to bridging the gap between technology and the arts, creating a unique blend of skills that I believe will
+                                drive innovation and creativity in the digital landscape.
+                            </div>
+                            <div>
                             I hope to bring my technical skills with me in future endeavors and develop solutions to challenging problems.
                             I look forward to the exciting opportunities that lie at the intersection of technology and creativity!
+                            </div>
                         </p>
                     </Animate>
 
