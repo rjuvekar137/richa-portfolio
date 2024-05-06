@@ -27,6 +27,14 @@ const personalDetails = [
     {
         label: "Graduation Date:",
         value: "May 2026",
+    },
+    {
+        label: "Linkedin:",
+        value: "https://www.linkedin.com/in/richajuvekar/ ",
+    },
+    {
+        label: "GitHub:",
+        value: "https://github.com/rjuvekar137 ",
     }
 ]
 
@@ -50,7 +58,7 @@ const About = () => {
                             transform: "translate(0px)",
                         }}
                     >
-                        <h3>Student</h3>
+                        <h3>Richa Juvekar</h3>
                         <p>
                             Hello, I'm Richa! I'm a sophomore student at Northeastern University, majoring in Computer Science and
                             Marketing Analytics and pursuing two minors in Music Industry and Immersive Media.
@@ -74,7 +82,7 @@ const About = () => {
                             transform: "translate(0px)",
                         }}
                     >
-                        <h3 className="contactInfo"> Contact Me</h3>
+                        <h3 className="contactInfo"> Personal Info</h3>
                         <ul>
                             {
                                 personalDetails.map((item, i) => (
