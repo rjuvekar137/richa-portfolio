@@ -67,8 +67,8 @@ const About = () => {
                                 drive innovation and creativity in the digital landscape.
                             </div>
                             <div>
-                            I hope to bring my technical skills with me in future endeavors and develop solutions to challenging problems.
-                            I look forward to the exciting opportunities that lie at the intersection of technology and creativity!
+                                I hope to bring my technical skills with me in future endeavors and develop solutions to challenging problems.
+                                I look forward to the exciting opportunities that lie at the intersection of technology and creativity!
                             </div>
                         </p>
                     </Animate>

@@ -59,7 +59,7 @@
 }
 
 @media only screen and (max-width : 768px) {
-    .navBar__Container__Menu{
+    .navBar__Container__Menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -70,24 +70,25 @@
         left: -110%;
         opacity: 1;
         transition: all 0.5 ease;
+        z-index: 10; /* Add this line */
 
-        &.active{
+        &.active {
             background-color: #181818;
             left: 0px;
             opacity: 1;
         }
 
-        &__Item{
+        &__Item {
             border-bottom: 1px solid #282828;
             margin: 0px;
             padding: 20px 0px;
         }
     }
 
-    .nav-icon{
-       display: block;
-       cursor: pointer;
-       color: var(--theme-main-color);
-       padding-right: 20px;
+    .nav-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--theme-main-color);
+        padding-right: 20px;
     }
 }
